@@ -6,7 +6,7 @@
 
             <!--Connect to Css-->
             <link rel="stylesheet"  type="text/css" href="one_page_website.css">
-            
+            <meta name="viewport" content="width=device-width, initial-scale=1">
             <!--Title of the Website-->
             <title>Kape de Moderno</title>
             <meta charset="utf-8">
@@ -24,19 +24,103 @@
         <a href="one_page_website.html">About</a> 
         </nav>
    </div>
+ <!--Image Menu-->
 
 <div class="coffeimg">
-<div class="image">
+   
+        <div class="image">
+        
+            <div class="column">
+            <img src="for image/coffee modern.png"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            
+            <div class="column">
+            <img src="for image/kape1.jpg"  onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            
+            <div class="column">
+            <img src="for image/kape cap.jpeg"  onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
 
-        <img src="for image/coffee modern.png">
-        <img src="for image/kape1.jpg">
-        <img src="for image/kape cap.jpeg">
-        <img src="for image/kape latte.jpg">
-        <img src="for image/kape spanish.jpg">
-        <img src="for image/kape-barako-cup.webp">
+            <div class="column">
+            <img src="for image/kape latte.jpg"  onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
 
+            <div class="column">
+            <img src="for image/kape spanish.jpg"  onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+            </div>
+
+            <div class="column">
+            <img src="for image/kape-barako-cup.webp"  onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+            </div>
+    </div>
 </div>
+
+<div id="myModal" class="modal">
+
+    <span class="close cursor" onlick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="for image/coffee modern.png" style="width: 80%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="for image/kape1.jpg" style="width:80%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="for image/kape cap.jpeg" style="width:80%">
+        </div>
+        
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="for image/kape latte.jpg" style="width:80%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="for image/kape spanish.jpg" style="width:80%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="for image/kape-barako-cup.webp" style="width:80%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column1">
+      <img class="demo cursor" src="for image/coffee modern.png"  onclick="currentSlide(1)" alt="Modern Coffee">
+    </div>
+    <div class="column1">
+        <img class="demo cursor" src="for image/kape1.jpg"  onclick="currentSlide(2)" alt="Doble Kape">
+      </div>
+    <div class="column1">
+      <img class="demo cursor" src="for image/kape cap.jpeg"  onclick="currentSlide(3)" alt="Kape Cappucino">
+    </div>
+    <div class="column1">
+      <img class="demo cursor" src="for image/kape latte.jpg"  onclick="currentSlide(4)" alt="Kape Latte">
+    </div>
+    <div class="column1">
+      <img class="demo cursor" src="for image/kape spanish.jpg"  onclick="currentSlide(5)" alt="Kape Spanish">
+    </div>
+    <div class="column1">
+        <img class="demo cursor" src="for image/kape-barako-cup.webp"  onclick="currentSlide(6)" alt="Kape Barako">
+      </div>
+    
+    </div>
 </div>
+
 
 <div class="about">
     <h3>ABOUT US</p3>
@@ -49,8 +133,8 @@
 </div>
 
 </div>
-
-
+<!--Connect to JS-->
+<script src="JS/one_page_website1.js"></script>
 
 <footer>
     <p> Contact us for more informations!</p>
@@ -82,3 +166,4 @@
 
 
 </html>
+
